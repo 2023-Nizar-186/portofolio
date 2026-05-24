@@ -46,17 +46,7 @@ Inspired by Dragon Ball philosophy:
 
 ## 🖼 Preview
 
-Tambahkan screenshot website di folder:
-
-```bash
-assets/preview.png
-```
-
-Lalu aktifkan:
-
-```md
 <img src="./assets/preview.png"/>
-```
 
 ---
 
@@ -108,10 +98,6 @@ Open index.html
 ---
 
 ## 🌐 Live Demo
-
-Coming Soon...
-
-atau nanti ganti:
 
 https://2023-nizar-186.github.io/portfolio/
 
