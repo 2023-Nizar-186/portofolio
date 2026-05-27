@@ -75,27 +75,6 @@ portfolio/
 
 ---
 
-## ⚙ Installation
-
-Clone repository:
-
-```bash
-git clone https://github.com/2023-Nizar-186/portfolio.git
-```
-
-Open folder:
-
-```bash
-cd portfolio
-```
-
-Run:
-
-```bash
-Open index.html
-```
-
----
 
 ## 🌐 Live Demo
 
