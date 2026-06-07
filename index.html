@@ -3,340 +3,607 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmad Nizar | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      background: #0b0f1a;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #ff9f1c, #111827 45%, #050816);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(5, 8, 22, 0.9);
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 8%;
-      z-index: 1000;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    nav h2 {
-      color: #ffb703;
-      letter-spacing: 1px;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 22px;
-      list-style: none;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffb703;
-    }
-
-    .hero h1 {
-      font-size: 3.4rem;
-      margin-bottom: 10px;
-    }
-
-    .hero h1 span {
-      color: #ffb703;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      font-size: 1.1rem;
-      color: #e5e7eb;
-    }
-
-    .badge {
-      display: inline-block;
-      background: rgba(255, 183, 3, 0.15);
-      color: #ffb703;
-      padding: 8px 16px;
-      border: 1px solid #ffb703;
-      border-radius: 999px;
-      margin-bottom: 18px;
-      font-weight: bold;
-    }
-
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      border-radius: 10px;
-      background: #ffb703;
-      color: #111827;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 25px rgba(255, 183, 3, 0.5);
-    }
-
-    .btn.secondary {
-      background: transparent;
-      color: #ffb703;
-      border: 1px solid #ffb703;
-    }
-
-    section {
-      padding: 80px 8%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-      font-size: 2.2rem;
-      color: #ffb703;
-    }
-
-    .about, .skills, .projects, .contact {
-      background: #0b0f1a;
-    }
-
-    .about-card {
-      max-width: 900px;
-      margin: auto;
-      background: #111827;
-      padding: 30px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: #111827;
-      padding: 25px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: #ffb703;
-      box-shadow: 0 0 25px rgba(255, 183, 3, 0.15);
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-      color: #ffb703;
-    }
-
-    .skill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-    }
-
-    .skill-list span {
-      background: #111827;
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 10px 16px;
-      border-radius: 999px;
-      color: #e5e7eb;
-    }
-
-    .quote {
-      background: linear-gradient(135deg, #ffb703, #fb8500);
-      color: #111827;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.3rem;
-    }
-
-    .contact-box {
-      max-width: 700px;
-      margin: auto;
-      text-align: center;
-      background: #111827;
-      padding: 35px;
-      border-radius: 18px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #050816;
-      color: #9ca3af;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav ul {
-        gap: 12px;
-        font-size: 0.9rem;
-      }
-
-      .hero h1 {
-        font-size: 2.3rem;
-      }
-
-      section {
-        padding: 60px 6%;
-      }
-    }
-  </style>
+  <meta name="description" content="Ahmad Nizar Rusdiawan — Informatics Student, Data Analytics Enthusiast, Data Science & Machine Learning Learner. Portfolio showcasing projects in NLP, Agent-Based Modeling, and more." />
+  <meta property="og:title" content="Ahmad Nizar Rusdiawan | Portfolio" />
+  <meta property="og:description" content="Data Analytics Enthusiast | Data Science & Machine Learning Learner | Teknik Informatika Semester 6" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://2023-nizar-186.github.io" />
+  <title>Ahmad Nizar Rusdiawan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <nav>
-    <h2>Nizar.dev</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<body class="dark-theme" data-theme="dark">
 
-  <header id="home">
-    <div class="hero">
-      <div class="badge">Informatics Student • Data Science Enthusiast</div>
-      <h1>Halo, saya <span>Ahmad Nizar</span></h1>
-      <p>
-        Mahasiswa Informatika yang tertarik pada Data Science, Web Development,
-        dan Network Security. Terinspirasi dari semangat Dragon Ball: terus berlatih,
-        berkembang, dan melampaui batas diri.
-      </p>
-      <div class="btn-group">
-        <a href="#projects" class="btn">Lihat Project</a>
-        <a href="https://github.com/2023-Nizar-186" target="_blank" class="btn secondary">GitHub Saya</a>
-      </div>
+  <!-- Loading Screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">NR</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing...</p>
     </div>
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Ahmad Nizar Rusdiawan - Home">
+        <span class="logo-bracket">&lt;</span>Nizar<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
   </header>
 
-  <section id="about" class="about">
-    <h2 class="section-title">Tentang Saya</h2>
-    <div class="about-card">
-      <p>
-        Saya adalah mahasiswa Informatika semester 6 yang sedang membangun portofolio
-        melalui project-project kecil namun konsisten. Saya menyukai pengembangan web,
-        pengolahan data, dan keamanan jaringan. Prinsip saya sederhana: progress kecil
-        setiap hari tetap lebih baik daripada diam di tempat.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2 class="section-title">Skill</h2>
-    <div class="skill-list">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>PHP</span>
-      <span>Laravel</span>
-      <span>C#</span>
-      <span>C++</span>
-      <span>Dart</span>
-      <span>Data Science</span>
-      <span>Network Security</span>
-      <span>GitHub</span>
-    </div>
-  </section>
-
-  <section class="quote">
-    "Tidak perlu langsung menjadi Ultra Instinct. Cukup naik level sedikit demi sedikit setiap hari."
-  </section>
-
-  <section id="projects" class="projects">
-    <h2 class="section-title">Project</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Dragon Ball Battle Simulator</h3>
-        <p>
-          Simulasi pertarungan karakter Dragon Ball menggunakan statistik power,
-          skill, transformasi, dan peluang kemenangan.
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <canvas id="particleCanvas" aria-hidden="true"></canvas>
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          Available for Internship &amp; Collaboration
+        </div>
+        <h1 class="hero-name reveal-up" style="--delay: 0.1s">
+          Ahmad Nizar<br /><span class="name-highlight">Rusdiawan</span>
+        </h1>
+        <div class="hero-roles reveal-up" style="--delay: 0.2s">
+          <span class="role-prefix">—</span>
+          <span id="typingText" class="typing-text" aria-live="polite"></span>
+          <span class="cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-desc reveal-up" style="--delay: 0.3s">
+          Mahasiswa Teknik Informatika semester 6 yang berfokus pada <strong>Data Analytics</strong>,
+          <strong>Data Science</strong>, dan <strong>Machine Learning</strong>. Berpengalaman
+          mengembangkan proyek berbasis data menggunakan Python, termasuk klasifikasi,
+          analisis teks NLP, dan simulasi Agent-Based Modeling.
         </p>
+        <div class="hero-cta reveal-up" style="--delay: 0.4s">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="assets/resume/cv-placeholder.pdf" class="btn btn-ghost" download aria-label="Download CV">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8M5 7l3 3 3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-socials reveal-up" style="--delay: 0.5s">
+          <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmad-nizar-rusdiawan-908819398" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:ahmadzarik4576@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Dragon Ball Power Tracker</h3>
-        <p>
-          Website untuk mencatat karakter, ras, transformasi, dan perkembangan power level.
-        </p>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
-      <div class="card">
-        <h3>Data Science Mini Project</h3>
-        <p>
-          Project analisis data sederhana menggunakan Python, visualisasi, dan insight dari dataset.
-        </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section" aria-label="About Me">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">01 / About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal-up">
+            <p class="about-intro">
+              Halo! Saya <strong>Nizar</strong>, mahasiswa Teknik Informatika semester 6 di Malang
+              yang passionate di bidang <em>Data Analytics</em>, <em>Data Science</em>, dan
+              <em>Machine Learning</em>.
+            </p>
+            <p>
+              Saya tertarik pada bagaimana data dapat memberikan insight bermakna dan membantu
+              pengambilan keputusan. Fokus saya saat ini meliputi <strong>Natural Language Processing (NLP)</strong>
+              dan <strong>Agent-Based Modeling</strong> — dua bidang yang saya eksplorasi
+              melalui proyek-proyek akademik dan riset.
+            </p>
+            <p>
+              Saya menikmati bekerja baik secara mandiri maupun dalam tim kolaboratif,
+              dan selalu antusias untuk mempelajari teknologi dan metodologi baru yang
+              dapat meningkatkan kualitas analisis data.
+            </p>
+            <div class="about-tags">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Agent-Based Modeling</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="about-stats reveal-up" style="--delay: 0.15s">
+            <div class="stat-card">
+              <div class="stat-number" data-count="6">0</div>
+              <div class="stat-label">Semester</div>
+              <div class="stat-sub">Teknik Informatika</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number gpa">3.8<span>+</span></div>
+              <div class="stat-label">GPA</div>
+              <div class="stat-sub">Skala 4.0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="6">0</div>
+              <div class="stat-label">Projects</div>
+              <div class="stat-sub">Completed &amp; Ongoing</div>
+            </div>
+            <div class="stat-card focus-card">
+              <div class="stat-icon">⬡</div>
+              <div class="stat-label">Focus Area</div>
+              <div class="stat-sub">Data Science &amp; ML</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Network Security Notes</h3>
-        <p>
-          Dokumentasi belajar keamanan jaringan, command dasar, dan catatan praktikum.
-        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section" aria-label="Skills">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">02 / Skills</span>
+          <h2 class="section-title">Technical Stack</h2>
+        </div>
+        <div class="skills-tabs reveal-up">
+          <button class="tab-btn active" data-tab="all">All</button>
+          <button class="tab-btn" data-tab="languages">Languages</button>
+          <button class="tab-btn" data-tab="data">Data & ML</button>
+          <button class="tab-btn" data-tab="web">Web Dev</button>
+          <button class="tab-btn" data-tab="tools">Tools</button>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Programming Languages -->
+          <div class="skill-card reveal-up" data-category="languages">
+            <div class="skill-icon">🐍</div>
+            <div class="skill-name">Python</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="languages">
+            <div class="skill-icon">☕</div>
+            <div class="skill-name">Java</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="languages">
+            <div class="skill-icon">⚙</div>
+            <div class="skill-name">C / C++</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="languages">
+            <div class="skill-icon">#</div>
+            <div class="skill-name">C#</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="languages">
+            <div class="skill-icon">🐘</div>
+            <div class="skill-name">PHP</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="languages">
+            <div class="skill-icon">JS</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <!-- Data Analytics -->
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">🐼</div>
+            <div class="skill-name">Pandas</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">∑</div>
+            <div class="skill-name">NumPy</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">🧹</div>
+            <div class="skill-name">Data Cleaning</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">📊</div>
+            <div class="skill-name">EDA</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">🔧</div>
+            <div class="skill-name">Feature Engineering</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">📈</div>
+            <div class="skill-name">Data Visualization</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">🤖</div>
+            <div class="skill-name">Scikit-Learn</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">💬</div>
+            <div class="skill-name">NLP</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="74"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="data">
+            <div class="skill-icon">📉</div>
+            <div class="skill-name">Model Evaluation</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <!-- Web Dev -->
+          <div class="skill-card reveal-up" data-category="web">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-name">HTML / CSS</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="web">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="web">
+            <div class="skill-icon">🔴</div>
+            <div class="skill-name">Laravel</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <!-- Tools -->
+          <div class="skill-card reveal-up" data-category="tools">
+            <div class="skill-icon">🔀</div>
+            <div class="skill-name">Git / GitHub</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="tools">
+            <div class="skill-icon">📓</div>
+            <div class="skill-name">Jupyter Notebook</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="tools">
+            <div class="skill-icon">☁</div>
+            <div class="skill-name">Google Colab</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-card reveal-up" data-category="tools">
+            <div class="skill-icon">⬛</div>
+            <div class="skill-name">VS Code</div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span class="skill-level">Advanced</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section" aria-label="Projects">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">03 / Projects</span>
+          <h2 class="section-title">Featured Work</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal-up" aria-label="Project: Boicell Mobile Service Application">
+            <div class="project-thumb">
+              <div class="thumb-bg" style="--hue: 230"></div>
+              <div class="thumb-icon">📱</div>
+              <div class="project-status">Academic Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Boicell Mobile Service App</h3>
+              <p class="project-desc">Aplikasi mobile untuk pemesanan layanan perbaikan perangkat, reservasi teknisi, manajemen garansi, dan dukungan pelanggan dengan integrasi REST API.</p>
+              <div class="project-stack">
+                <span>Flutter</span><span>Dart</span><span>REST API</span><span>JSON</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="project-btn btn-gh" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+                <button class="project-btn btn-detail" onclick="openProjectModal(0)" aria-label="View details">Detail →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured reveal-up" style="--delay: 0.05s" aria-label="Project: Food Price Sentiment Analysis">
+            <div class="project-thumb">
+              <div class="thumb-bg" style="--hue: 265"></div>
+              <div class="thumb-icon">🧠</div>
+              <div class="project-status">Academic Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Food Price Sentiment Analysis</h3>
+              <p class="project-desc">Model klasifikasi sentimen berita ketahanan pangan menggunakan teknik NLP, feature engineering, dan machine learning untuk mengidentifikasi sentimen positif, negatif, dan netral.</p>
+              <div class="project-stack">
+                <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>NLP</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="project-btn btn-gh" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+                <button class="project-btn btn-detail" onclick="openProjectModal(1)" aria-label="View details">Detail →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" style="--delay: 0.1s" aria-label="Project: Campus Canteen ABM Simulation">
+            <div class="project-thumb">
+              <div class="thumb-bg" style="--hue: 160"></div>
+              <div class="thumb-icon">🏫</div>
+              <div class="project-status">Academic Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Campus Canteen ABM Simulation</h3>
+              <p class="project-desc">Simulasi perilaku mahasiswa dalam memilih kantin menggunakan Agent-Based Modeling untuk menganalisis antrean, kepadatan, dan preferensi pengguna.</p>
+              <div class="project-stack">
+                <span>Python</span><span>Mesa</span><span>Data Visualization</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="project-btn btn-gh" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+                <button class="project-btn btn-detail" onclick="openProjectModal(2)" aria-label="View details">Detail →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" style="--delay: 0.15s" aria-label="Project: Student Stress ABM Simulation">
+            <div class="project-thumb">
+              <div class="thumb-bg" style="--hue: 320"></div>
+              <div class="thumb-icon">📱</div>
+              <div class="project-status research">Research Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Stress Social Media ABM</h3>
+              <p class="project-desc">Simulasi tingkat stres mahasiswa akibat social comparison di media sosial menggunakan pendekatan Agent-Based Modeling.</p>
+              <div class="project-stack">
+                <span>Python</span><span>Mesa</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="project-btn btn-gh" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+                <button class="project-btn btn-detail" onclick="openProjectModal(3)" aria-label="View details">Detail →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" style="--delay: 0.2s" aria-label="Project: Sprinta Sports Platform">
+            <div class="project-thumb">
+              <div class="thumb-bg" style="--hue: 40"></div>
+              <div class="thumb-icon">⚽</div>
+              <div class="project-status team">Team Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sprinta Sports Platform</h3>
+              <p class="project-desc">Platform olahraga dengan fitur reservasi lapangan, manajemen member gym, serta informasi event olahraga yang lengkap.</p>
+              <div class="project-stack">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="project-btn btn-gh" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+                <button class="project-btn btn-detail" onclick="openProjectModal(4)" aria-label="View details">Detail →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" style="--delay: 0.25s" aria-label="Project: Unwritten The Myth Begins">
+            <div class="project-thumb">
+              <div class="thumb-bg" style="--hue: 15"></div>
+              <div class="thumb-icon">⚔</div>
+              <div class="project-status personal">Personal Project</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Unwritten: The Myth Begins</h3>
+              <p class="project-desc">Game action-platformer 2D dengan fokus pada combat, parry system, lore misterius, dan eksplorasi dunia fantasi menggunakan Godot Engine.</p>
+              <div class="project-stack">
+                <span>Godot</span><span>GDScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="project-btn btn-gh" aria-label="View on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+                <button class="project-btn btn-detail" onclick="openProjectModal(5)" aria-label="View details">Detail →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline-section" aria-label="Learning Journey">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">04 / Journey</span>
+          <h2 class="section-title">Learning Path</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal-up">
+            <div class="timeline-marker">
+              <span class="year">2023</span>
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Awal Perjalanan</h3>
+              <p>Memulai kuliah Teknik Informatika. Belajar dasar-dasar pemrograman, algoritma, dan logika komputer. Pertama kali berkenalan dengan Python dan Java.</p>
+              <div class="timeline-tags"><span>Programming Basics</span><span>Python</span><span>Java</span></div>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up" style="--delay: 0.1s">
+            <div class="timeline-marker">
+              <span class="year">2024</span>
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Web Development</h3>
+              <p>Mendalami web development dengan HTML, CSS, JavaScript, dan framework Laravel. Mengembangkan kemampuan dalam membangun aplikasi web yang fungsional dan responsif.</p>
+              <div class="timeline-tags"><span>Laravel</span><span>HTML/CSS</span><span>JavaScript</span></div>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up" style="--delay: 0.2s">
+            <div class="timeline-marker">
+              <span class="year">2025</span>
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Data Analytics & ML</h3>
+              <p>Fokus beralih ke Data Analytics dan Machine Learning. Mempelajari Pandas, NumPy, Scikit-Learn, dan teknik-teknik analisis data. Mulai mengerjakan proyek NLP pertama.</p>
+              <div class="timeline-tags"><span>Pandas</span><span>Scikit-Learn</span><span>NLP</span></div>
+            </div>
+          </div>
+          <div class="timeline-item active reveal-up" style="--delay: 0.3s">
+            <div class="timeline-marker">
+              <span class="year">2026</span>
+              <div class="marker-dot pulse"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Data Science & Simulation ✦ Now</h3>
+              <p>Mengembangkan proyek Data Science dan Agent-Based Simulation. Membangun portofolio yang solid di bidang klasifikasi, NLP, dan simulasi berbasis data menggunakan Mesa.</p>
+              <div class="timeline-tags"><span>Mesa ABM</span><span>Data Science</span><span>Simulation</span><span>Portfolio</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" aria-label="Contact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">05 / Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle reveal-up">Tertarik untuk berkolaborasi atau sekadar berdiskusi? Saya selalu terbuka untuk peluang baru.</p>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:ahmadzarik4576@gmail.com" class="contact-card reveal-up" aria-label="Send email">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">ahmadzarik4576@gmail.com</span>
+            </div>
+            <button class="copy-btn" id="copyEmailBtn" onclick="copyEmail(event)" aria-label="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </a>
+
+          <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" class="contact-card reveal-up" style="--delay: 0.1s" aria-label="Visit GitHub profile">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">2023-Nizar-186</span>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ahmad-nizar-rusdiawan-908819398" target="_blank" rel="noopener noreferrer" class="contact-card reveal-up" style="--delay: 0.2s" aria-label="Visit LinkedIn profile">
+            <div class="contact-icon linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Ahmad Nizar Rusdiawan</span>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <div class="contact-card location reveal-up" style="--delay: 0.3s">
+            <div class="contact-icon loc">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Malang, Jawa Timur, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Nizar<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2026 Ahmad Nizar Rusdiawan. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="https://github.com/2023-Nizar-186" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/ahmad-nizar-rusdiawan-908819398" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:ahmadzarik4576@gmail.com" aria-label="Email">Email</a>
       </div>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2 class="section-title">Kontak</h2>
-    <div class="contact-box">
-      <p>Terbuka untuk belajar bareng, kolaborasi project, dan pengembangan skill.</p>
-      <br />
-      <a href="mailto:okayamagang@gmail.com" class="btn">Email Saya</a>
-      <a href="https://github.com/2023-Nizar-186" target="_blank" class="btn secondary">GitHub</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Ahmad Nizar. Built with spirit like a Saiyan.</p>
   </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
