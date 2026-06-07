@@ -27,7 +27,38 @@ A modern, professional, and fully responsive personal portfolio website built wi
 
 ## 🗂️ Project Structure
 
+<<<<<<< HEAD
 ```
+=======
+✅ Responsive design  
+✅ Dark modern UI  
+✅ Smooth scrolling navigation  
+✅ Project showcase section  
+✅ Skill section  
+✅ Contact section  
+✅ Dragon Ball inspired quotes  
+
+---
+
+## 🖼 Preview
+
+<img src="./assets/preview.png"/>
+
+---
+
+## 🛠 Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+---
+
+## 📂 Project Structure
+
+```bash
+>>>>>>> 8c3b063767b8ff1b2031cd796ed232d3b5ecf119
 portfolio/
 │
 ├── index.html          # Main HTML file
@@ -44,6 +75,7 @@ portfolio/
 
 ---
 
+<<<<<<< HEAD
 ## 🖥️ How to Run Locally
 
 ### Option 1 — Open Directly
@@ -121,13 +153,19 @@ Edit CSS variables in `css/style.css`:
 ### Add Profile Photo
 1. Place your photo in `assets/images/profile.jpg`
 2. Add an `<img>` tag in the About section in `index.html`
+=======
+>>>>>>> 8c3b063767b8ff1b2031cd796ed232d3b5ecf119
 
 ### Add Your CV
 1. Place your CV PDF in `assets/resume/` renamed to `cv-placeholder.pdf`
 2. The "Download CV" button will automatically link to it
 
+<<<<<<< HEAD
 ### Update Links
 Search for placeholder GitHub links in `index.html` and `js/script.js` and replace with your actual repository URLs.
+=======
+https://2023-nizar-186.github.io/portfolio/
+>>>>>>> 8c3b063767b8ff1b2031cd796ed232d3b5ecf119
 
 ---
 
