@@ -202,12 +202,6 @@ Malang, Jawa Timur, Indonesia
 
 ---
 
-## 📜 Lisensi
-
-Proyek ini menggunakan lisensi MIT dan dapat digunakan sebagai referensi maupun dikembangkan lebih lanjut sesuai kebutuhan.
-
----
-
 ⭐ Jika Anda menyukai proyek ini, jangan lupa berikan Star pada repository ini.
 
-Dibuat dengan ❤️ oleh Ahmad Nizar Rusdiawan.
+Dibuat oleh Ahmad Nizar Rusdiawan.
