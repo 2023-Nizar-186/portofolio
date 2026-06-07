@@ -243,22 +243,6 @@ https://2023-nizar-186.github.io/portfolio/
 
 ---
 
-## 📄 CV
-
-Simpan file CV pada folder:
-
-```text
-assets/resume/
-```
-
-Contoh:
-
-```text
-assets/resume/Ahmad_Nizar_CV.pdf
-```
-
----
-
 ## 📞 Kontak
 
 📧 Email:
