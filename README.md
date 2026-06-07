@@ -31,7 +31,7 @@ Preview website dapat dilihat melalui GitHub Pages:
 **Live Demo**
 
 ```text
-https://2023-nizar-186.github.io/portfolio/
+https://2023-nizar-186.github.io/portofolio/
 ```
 
 ---
@@ -175,14 +175,6 @@ Game Action Platformer 2D yang sedang dikembangkan menggunakan Godot Engine deng
 **Teknologi:**
 Godot Engine, GDScript
 
----
-
-
-Website akan tersedia di:
-
-```text
-https://2023-nizar-186.github.io/portfolio/
-```
 
 ---
 
